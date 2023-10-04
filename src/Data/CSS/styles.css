@@ -1,0 +1,177 @@
+
+/* ------------------------------------------------- */
+/* ------------------ GLOBAL CSS ------------------- */
+/* ------------------------------------------------- */
+
+/* Font */
+h1 {
+    font-size: 6.67vw;
+}
+
+h2 {
+    font-size: 3.33vw;
+}
+
+h3 {
+    font-size: 2.22vw;
+}
+
+h4, li {
+    font-size: 1.67vw;
+}
+
+h5 {
+    font-size: 1.38vw;
+}
+
+h6 {
+    font-size: 1.11vw;
+}
+
+p {
+    font-size: 0.97vw;
+}
+
+small {
+    font-size: 0.83vw;
+}
+
+
+/* Padding */
+.px40 {
+    padding-left: 2.77%;
+    padding-right: 2.77%;
+}
+
+.px80 {
+    padding-left: 5.55%;
+    padding-right: 5.55%;
+}
+
+
+
+/* ------------------------------------------------- */
+/* -------------------- HEADER --------------------- */
+/* ------------------------------------------------- */
+
+.active {
+    border-bottom: 3px solid #FFA043;
+    color: white;
+}
+
+.active:hover {
+    color: white;
+}
+
+
+
+/* ------------------------------------------------- */
+/* ---------------------- HOME --------------------- */
+/* ------------------------------------------------- */
+
+.home-container {
+    width: 75%;
+    background-color: rgb(0, 0, 0, 0.59);
+    border-radius: 50px;
+}
+
+.home-team-container {
+    width: 250px;
+    height: 300px;
+}
+
+.home-team-container:hover > .home-team-card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.home-team-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+
+    background-color: rgb(0, 0, 0, 0.59);
+    border-radius: 50px;
+}
+
+.home-team-front,
+.home-team-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+
+    border-radius: 50px;
+    box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.60);
+}
+
+.home-team-back {
+    transform: rotateY(180deg);
+}
+
+.home-testimonial-container {
+    position: relative;
+    width: 60%;
+
+    margin: 20px auto;
+}
+
+
+
+/* ------------------------------------------------- */
+/* ------------------- INFORMATION ----------------- */
+/* ------------------------------------------------- */
+
+.contact-container {
+    width: 80%;
+    background-color: rgb(101, 101, 101, 0.80);
+}
+
+.contact-content {
+    width: 40%;
+}
+
+#information input[type=text], textarea {
+    font-style: italic;
+
+    width: 100%;
+    padding: 5px 20px;
+    margin: 8px 0;
+    border: 1px solid #ffff;
+    background-color: rgb(217, 217, 217, 0.10);
+}
+
+input[type=checkbox] {
+    transform: scale(1.5);
+}
+
+#information input[type=submit] {
+    font-style: italic;
+
+    width: 100%;
+    background-color: #AC7364;
+    color: white;
+    padding: 7px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+#information input[type=submit]:hover {
+    background-color: rgb(113, 68, 68);
+}
+
+
+
+/* ------------------------------------------------- */
+/* ------------------ PRODUCT DETAIL --------------- */
+/* ------------------------------------------------- */
+
+#productDetail .button-buy{
+    font: 1.38vwvw;
+    font-weight: bold;
+    border : 2px solid #FFA043;
+    border-radius: 10px;
+    padding: 15px 60px;
+}
